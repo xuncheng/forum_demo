@@ -1,4 +1,8 @@
 ForumDemo::Application.routes.draw do
+  resources :boards do
+    resources :posts
+  end
+
   root :to => 'pages#welcome'
   
   # The priority is based upon order of creation:
