@@ -75,7 +75,7 @@ class PostsController < ApplicationController
     @post.destroy
 
     respond_to do |format|
-      format.html { redirect_to board_post_path(@board, @post) }
+      format.html { redirect_to board_posts_path(@board, @post) }
       format.json { head :no_content }
     end
   end
